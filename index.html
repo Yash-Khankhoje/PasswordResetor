@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+      
+  </style>
+</head>
+
+<body>
+    
+     <div class="container">
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <div class="login-box">
+                        <div class="login-snip"> <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                            <div class="login-space">
+                                <div class="login" id="login-form">
+                                    <form onsubmit="return onLogIn()">
+                                          <div class="group"> 
+                                            <label for="logInEmailId" class="label">Email</label> 
+                                            <input id="logInEmailId" type="text" class="input" placeholder="Enter your EmailId" required> 
+                                          </div>
+                                          <div class="group">
+                                            <label for="loginPassword" class="label">Password</label>
+                                            <input id="loginPassword" type="password" class="input" data-type="password" placeholder="Enter your password" required>
+                                          </div>
+                                          <div class="group"> 
+                                            <input type="submit" id="login" class="button" value="Login"> 
+                                          </div>
+                                    </form>
+                                    
+                                    <div class="text-center">
+                                       <a href="reset.html">Forgot Password?</a> 
+                                    </div>
+                                </div>
+                                <div class="sign-up-form" id="sign-up-form">
+                                    <form onsubmit="return onSignUp()">
+                                      <div class="group"> 
+                                          <label for="signupEmailId" class="label">Email Id</label> 
+                                          <input id="signupEmailId" type="text" class="input" placeholder="Enter your EmailId" required> 
+                                      </div>
+                                      <div class="group"> 
+                                          <label for="signUpPassword" class="label">Password</label> 
+                                          <input id="signUpPassword" type="password" class="input" data-type="password" placeholder="Create your password" required>
+                                      </div>
+                                      <div class="group"> 
+                                          <label for="confirmPassword" class="label">Repeat Password</label> 
+                                          <input id="confirmPassword" type="password" class="input" data-type="password" placeholder="Re-Enter your password" required> 
+                                      </div>
+                                      <div class="group">
+                                           <input type="submit" class="button" value="Sign Up"> 
+                                      </div>
+                                      <div class="d-none" id="passwordMismatchDiv">
+                                          <p class="text-danger">Passwords did not match!</p>
+                                      </div>
+                                      <div class="text-center"> 
+                                          <label for="tab-1">Already Member?</label> 
+                                      </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+     </div>
+
+     
+
+    <script src="script.js"></script>
+</body>
+
+</html>

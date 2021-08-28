@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Reset</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="row">
+            
+                <div class="col-md-6 m-auto">
+                    
+                        <div class="login-box">
+                            
+                            <div class="login-space" id="login-space" style="background: rgb(12 14 14 / 90%);">
+                                <form onsubmit="return sendPasswordResetLink()">
+                                    <div class="form-group m-5 p-5">
+                                        <div> 
+                                            <label for="emailToResetPassword" class="label">Email Id</label> 
+                                            <input id="emailToResetPassword" type="text" class="form-control" placeholder="Enter your EmailId" required> 
+                                            <small id="emailHelp" class="form-text text-muted">We'll send a password reset link to this emailId.</small>
+                                        </div>
+                                        <div style="text-align: center;"> 
+                                            <button type="submit" class="btn btn-primary m-3"  value="Confirm Email">Confirm Email </button>
+                                        </div>
+                                        
+                                    </div>
+                                </form>
+                                
+                            </div>
+                        </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+    
+    
